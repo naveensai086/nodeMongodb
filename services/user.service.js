@@ -24,7 +24,7 @@ exports.getUsers = (req, res) => {
       ],
       function(err, re) {
         if (err) res.send(err);
-        re.each(function(err, doc,i) {
+        re.each(function(err, doc, i) {
           if (err) res.send(err);
           console.log(doc);
         });
@@ -65,7 +65,7 @@ exports.updateuser = (req, res) => {
       }
     );
 };
-
+//new datafff 
 exports.deleteUsers = (req, res) => {
   let age = req.body.age;
 
